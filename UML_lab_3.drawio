@@ -1,0 +1,127 @@
+<mxfile host="app.diagrams.net" modified="2024-05-10T18:22:57.825Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="hs4gAyHY6GEGt7OEpRjV" version="24.3.1" type="device">
+  <diagram name="Страница — 1" id="BJZqCmyvZgr5lz0eyIy4">
+    <mxGraphModel dx="1172" dy="710" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="zVUwImat2BQB5LJZMK56-5" value="Reactor" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1500" y="135" width="410" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="zVUwImat2BQB5LJZMK56-6" value="&lt;div&gt;- type;:&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;String&lt;/span&gt;&lt;/div&gt;&lt;div&gt;- reactorClass:&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;String&lt;/span&gt;&lt;/div&gt;&lt;div&gt;- burnup:&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;Double&lt;/span&gt;&lt;/div&gt;&lt;div&gt;- electricalCapacity&lt;span style=&quot;background-color: initial;&quot;&gt;:&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Double&lt;/span&gt;&lt;/div&gt;&lt;div&gt;- enrichment&lt;span style=&quot;background-color: initial;&quot;&gt;:&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Double&lt;/span&gt;&lt;/div&gt;&lt;div&gt;- firstLoad&lt;span style=&quot;background-color: initial;&quot;&gt;:&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Double&lt;/span&gt;&lt;/div&gt;&lt;div&gt;- kpd&lt;span style=&quot;background-color: initial;&quot;&gt;:&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Double&lt;/span&gt;&lt;/div&gt;&lt;div&gt;- lifeTime:&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;Integer&lt;/span&gt;&lt;/div&gt;&lt;div&gt;- termalCapacity&lt;span style=&quot;background-color: initial;&quot;&gt;:&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Double&lt;/span&gt;&lt;/div&gt;&lt;div&gt;- source:&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;String&lt;/span&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="zVUwImat2BQB5LJZMK56-5">
+          <mxGeometry y="26" width="410" height="154" as="geometry" />
+        </mxCell>
+        <mxCell id="zVUwImat2BQB5LJZMK56-7" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="zVUwImat2BQB5LJZMK56-5">
+          <mxGeometry y="180" width="410" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="zVUwImat2BQB5LJZMK56-8" value="&lt;div&gt;+ Reactor(String type, String reactorClass, Double burnup, Double &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;electricalCapacity,&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;Double enrichment, Double firstLoad, Double &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;kpd, Integer lifeTime,&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Double termalCapacity, String source)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;toOutString():&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;String&lt;/span&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="zVUwImat2BQB5LJZMK56-5">
+          <mxGeometry y="188" width="410" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="zVUwImat2BQB5LJZMK56-9" value="&lt;i&gt;Importer&lt;/i&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="530" y="200" width="250" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="zVUwImat2BQB5LJZMK56-10" value="* Importer next" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="zVUwImat2BQB5LJZMK56-9">
+          <mxGeometry y="26" width="250" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zVUwImat2BQB5LJZMK56-11" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="zVUwImat2BQB5LJZMK56-9">
+          <mxGeometry y="52" width="250" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="zVUwImat2BQB5LJZMK56-12" value="+ setNext(Importer next)&lt;div&gt;+&amp;nbsp;isTrueType(File file): boolean&lt;/div&gt;&lt;div&gt;+ importFile(File file, ReactorsHolder reactorMap)&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="zVUwImat2BQB5LJZMK56-9">
+          <mxGeometry y="60" width="250" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="zVUwImat2BQB5LJZMK56-17" value="JsonImporter" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="960" y="60" width="420" height="106" as="geometry" />
+        </mxCell>
+        <mxCell id="zVUwImat2BQB5LJZMK56-19" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="zVUwImat2BQB5LJZMK56-17">
+          <mxGeometry y="26" width="420" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="zVUwImat2BQB5LJZMK56-20" value="&lt;div&gt;+&amp;nbsp;importFile(File file, ReactorsHolder reactorMap)&lt;/div&gt;&lt;div&gt;* isTrueType(File file): boolean&lt;br&gt;&lt;/div&gt;&lt;div&gt;- parseReactor(JsonNode reactorNode):&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;Reactor&lt;/span&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="zVUwImat2BQB5LJZMK56-17">
+          <mxGeometry y="34" width="420" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="zVUwImat2BQB5LJZMK56-22" value="XmlImporter" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="960" y="190" width="420" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="zVUwImat2BQB5LJZMK56-23" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="zVUwImat2BQB5LJZMK56-22">
+          <mxGeometry y="26" width="420" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="zVUwImat2BQB5LJZMK56-24" value="&lt;div&gt;+&amp;nbsp;importFile(File file, ReactorsHolder reactorMap)&lt;/div&gt;&lt;div&gt;* isTrueType(File file): boolean&lt;br&gt;&lt;/div&gt;&lt;div&gt;- parseReactor(JsonNode reactorNode):&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;Reactor&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- getElementTextContent(Element element, String tagName):&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;String&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;-&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;getDoubleElementTextContent(Element element, String tagName):&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Double&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;-&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;getIntElementTextContent(Element element, String tagName):&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Integer&lt;/span&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="zVUwImat2BQB5LJZMK56-22">
+          <mxGeometry y="34" width="420" height="116" as="geometry" />
+        </mxCell>
+        <mxCell id="zVUwImat2BQB5LJZMK56-25" value="YamlImporter" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="960" y="361" width="420" height="106" as="geometry" />
+        </mxCell>
+        <mxCell id="zVUwImat2BQB5LJZMK56-26" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="zVUwImat2BQB5LJZMK56-25">
+          <mxGeometry y="26" width="420" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="zVUwImat2BQB5LJZMK56-27" value="&lt;div&gt;+&amp;nbsp;importFile(File file, ReactorsHolder reactorMap)&lt;/div&gt;&lt;div&gt;* isTrueType(File file): boolean&lt;br&gt;&lt;/div&gt;&lt;div&gt;- parseReactor(JsonNode reactorNode):&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;Reactor&lt;/span&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="zVUwImat2BQB5LJZMK56-25">
+          <mxGeometry y="34" width="420" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="zVUwImat2BQB5LJZMK56-28" value="ReactorsHolder" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1580" y="467" width="250" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="zVUwImat2BQB5LJZMK56-29" value="- reactorMap: Map&amp;lt;String, Reactor&amp;gt;&amp;nbsp;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="zVUwImat2BQB5LJZMK56-28">
+          <mxGeometry y="26" width="250" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zVUwImat2BQB5LJZMK56-30" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="zVUwImat2BQB5LJZMK56-28">
+          <mxGeometry y="52" width="250" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="zVUwImat2BQB5LJZMK56-31" value="&lt;div&gt;+&amp;nbsp;ReactorsHolder()&lt;/div&gt;&lt;div&gt;+&amp;nbsp;addReactor(String key, Reactor reactor)&lt;/div&gt;&lt;div&gt;+ getReactorMap():&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;Map&amp;lt;String, Reactor&amp;gt;&lt;/span&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="zVUwImat2BQB5LJZMK56-28">
+          <mxGeometry y="60" width="250" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="zVUwImat2BQB5LJZMK56-32" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="zVUwImat2BQB5LJZMK56-25" target="zVUwImat2BQB5LJZMK56-9">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="780" y="410" as="sourcePoint" />
+            <mxPoint x="900" y="450" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="880" y="414" />
+              <mxPoint x="880" y="265" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zVUwImat2BQB5LJZMK56-33" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="zVUwImat2BQB5LJZMK56-22" target="zVUwImat2BQB5LJZMK56-9">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="790" y="420" as="sourcePoint" />
+            <mxPoint x="771" y="200" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="820" y="265" />
+              <mxPoint x="820" y="265" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zVUwImat2BQB5LJZMK56-34" value="Extends" style="endArrow=block;endSize=16;endFill=1;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="zVUwImat2BQB5LJZMK56-17" target="zVUwImat2BQB5LJZMK56-9">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="800" y="430" as="sourcePoint" />
+            <mxPoint x="781" y="210" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="880" y="113" />
+              <mxPoint x="880" y="265" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zVUwImat2BQB5LJZMK56-35" value="Create" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="zVUwImat2BQB5LJZMK56-17" target="zVUwImat2BQB5LJZMK56-5">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="580" y="360" as="sourcePoint" />
+            <mxPoint x="600" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zVUwImat2BQB5LJZMK56-36" value="Create" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="zVUwImat2BQB5LJZMK56-25" target="zVUwImat2BQB5LJZMK56-5">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1018" y="176" as="sourcePoint" />
+            <mxPoint x="610" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zVUwImat2BQB5LJZMK56-37" value="Create" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="zVUwImat2BQB5LJZMK56-22" target="zVUwImat2BQB5LJZMK56-5">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1028" y="186" as="sourcePoint" />
+            <mxPoint x="620" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zVUwImat2BQB5LJZMK56-38" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;rounded=0;" edge="1" parent="1" source="zVUwImat2BQB5LJZMK56-28" target="zVUwImat2BQB5LJZMK56-5">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1880" y="440" as="sourcePoint" />
+            <mxPoint x="1730" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
