@@ -12,12 +12,6 @@
             <version>2.17.1</version>
             <type>jar</type>
         </dependency>
-        <dependency>
-            <groupId>org.yaml</groupId>
-            <artifactId>snakeyaml</artifactId>
-            <version>2.2</version>
-            <type>bundle</type>
-        </dependency>
     </dependencies>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -25,6 +19,13 @@
         <maven.compiler.target>17</maven.compiler.target>
         <exec.mainClass>main_package.Main</exec.mainClass>
     </properties>
+    <!-- https://mvnrepository.com/artifact/org.yaml/snakeyaml -->
+    <dependency>
+    <groupId>org.yaml</groupId>
+    <artifactId>snakeyaml</artifactId>
+    <version>2.2</version>
+    </dependency>
+
     
     <build>
         <plugins>

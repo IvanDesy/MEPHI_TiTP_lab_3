@@ -9,6 +9,8 @@ import java.util.Iterator;
 import java.util.Map;
 
 import Objects.Reactor;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import masters.ReactorsHolder;
 /**
  *
@@ -18,7 +20,12 @@ public class JsonImporter extends Importer{
     @Override
     protected void inputCode(File file, ReactorsHolder reactorMap){
         ObjectMapper objectMapper = new ObjectMapper();
-            JsonNode rootNode = objectMapper.readTree(file);
+            JsonNode rootNode = null;
+        try {
+            rootNode = objectMapper.readTree(file);
+        } catch (IOException ex) {
+            Logger.getLogger(JsonImporter.class.getName()).log(Level.SEVERE, null, ex);
+        }
 
             for (Iterator<String> it = rootNode.fieldNames(); it.hasNext(); ) {
                 String fieldName = it.next();
