@@ -18,10 +18,10 @@ import masters.ReactorsHolder;
  * @author vanya
  */
 public class XmlImporter extends Importer {
+    
     @Override
-    public void importFile(File file, ReactorsHolder reactorMap) throws IOException {
-        if (isTrueType(file)) {
-            try {
+    protected void inputCode(File file, ReactorsHolder reactorMap){
+        try {
                 DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
                 DocumentBuilder builder = factory.newDocumentBuilder();
                 try (var fileInputStream = new FileInputStream(file)) {
@@ -41,13 +41,9 @@ public class XmlImporter extends Importer {
             } catch (Exception e) {
                 e.printStackTrace();
             }
-        } else if (next != null) {
-            next.importFile(file, reactorMap);
-        } else {
-            System.out.println("Unsupported file format");
-        }
     }
 
+    @Override
     protected boolean isTrueType(File file){
         return file.getName().endsWith(".xml");
     }

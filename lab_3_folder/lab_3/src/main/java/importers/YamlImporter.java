@@ -10,10 +10,11 @@ import Objects.Reactor;
 import masters.ReactorsHolder;
 
 public class YamlImporter extends Importer {
+    
+    
     @Override
-    public void importFile(File file, ReactorsHolder reactorMap) throws IOException {
-        if (isTrueType(file)) {
-            try {
+    protected void inputCode(File file, ReactorsHolder reactorMap){
+        try {
                 Yaml yaml = new Yaml();
                 FileInputStream inputStream = new FileInputStream(file);
                 Iterable<Object> objects = yaml.loadAll(inputStream);
@@ -29,13 +30,9 @@ public class YamlImporter extends Importer {
             } catch (Exception e) {
                 e.printStackTrace();
             }
-        } else if (next != null) {
-            next.importFile(file, reactorMap);
-        } else {
-            System.out.println("Unsupported file format");
-        }
     }
     
+    @Override
     protected boolean isTrueType(File file){
         return file.getName().endsWith(".yaml") || file.getName().endsWith(".yml");
     }

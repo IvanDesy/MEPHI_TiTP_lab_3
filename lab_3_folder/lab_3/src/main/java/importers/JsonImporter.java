@@ -16,9 +16,8 @@ import masters.ReactorsHolder;
  */
 public class JsonImporter extends Importer{
     @Override
-    public void importFile(File file, ReactorsHolder reactorMap) throws IOException {
-        if (isTrueType(file)) {
-            ObjectMapper objectMapper = new ObjectMapper();
+    protected void inputCode(File file, ReactorsHolder reactorMap){
+        ObjectMapper objectMapper = new ObjectMapper();
             JsonNode rootNode = objectMapper.readTree(file);
 
             for (Iterator<String> it = rootNode.fieldNames(); it.hasNext(); ) {
@@ -29,13 +28,9 @@ public class JsonImporter extends Importer{
                     reactorMap.addReactor(fieldName, reactor);
                 }
             }
-        } else if (next != null) {
-            next.importFile(file, reactorMap);
-        } else {
-            System.out.println("Unsupported file format");
-        }
     }
     
+    @Override
     protected boolean isTrueType(File file){
         return file.getName().endsWith(".json");
     }
